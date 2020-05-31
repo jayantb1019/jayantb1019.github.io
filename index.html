@@ -1,146 +1,226 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jayanth Boddu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+      integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      div,
+      p {
+        font-family: "Roboto Mono", monospace;
+      }
+      .content-subhead {
+        margin-top: 30px;
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <div>Jayanth Boddu</div>
-      <div>jayantb1019@gmail.com</div>
-      <div>+91 7710092075</div>
-      <div>Navi Mumbai, India</div>
-    </div>
-    <div>
-      <div>
-        <div>WORK</div>
-        <div>
-          <div>Appraisal : A/A+ throughout</div>
-          <div>
-            <div>2019 to present</div>
-            <div>OIL AND NATURAL GAS CORPORATION LTD</div>
-            <div>Executive Engineer(Electronics)</div>
-            <div>
-              Offshore Logistics,Tool Maintenance, Internal website maintenance,
-              Offshore Logistics coordination, Procurement, Inventory tracking &
-              Reconciliation, part of the audit team
-            </div>
-          </div>
-          <div>
-            <div>2015 to 2018</div>
-            <div>OIL AND NATURAL GAS CORPORATION LTD</div>
-            <div>Assistant Executive Engineer(Electronics)</div>
-            <div>
-              Internal website maintenance, inventory tracking and general
-              administration work.
-            </div>
-          </div>
-          <div>
-            <div>2013 to 2014</div>
-            <div>OIL AND NATURAL GAS CORPORATION LTD</div>
-            <div>Graduate Trainee</div>
-            <div>
-              Joined the company in Well Logging Services. Worked on maintenance
-              of hitech wireline logging tools and coordination of maintenance
-              processes. I was also responsible for Offshore Logistics and
-              operations support.
-            </div>
-          </div>
-        </div>
+    <div class="header">
+      <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Jayanth Boddu</a>
 
-        <div>PROJECTS</div>
-        <div>
-          <div>Web App for Inventory Tracking</div>
-          <div>
-            Built an inventory tracking web app with all store related
-            functionality using Full stack Javascript technologies. I used
-            <ul>
-              <li>NodeJS backend</li>
-              <li>ExpressJS web server</li>
-              <li>Angular frontend</li>
-              <li>MongoDB database</li>
-            </ul>
-            <div>
-              This web app is being used internally for daily operations.
-            </div>
-          </div>
-        </div>
-        <div>
-          <div>Biometric Attendance System</div>
-          <div>
-            Built a web based biometric attendance system. Wrote C++ libraries
-            to nodejs bindings to access device APIs. The device was connected
-            to server hosting the web app to track attendance. Angular and
-            bootstrap was used to build the web app. This app was used till the
-            roll out of enterprise wide access control system.
-          </div>
-        </div>
-        <div>
-          <div>Asset Tracking using Bluetooth Low Energy</div>
-          <div>
-            For real time position tracking of high value assets, I developed a
-            system involving low cost raspberry pi based scanners and BLE
-            beacons. Beacons were attached to high value assets. Readers placed
-            in each zone read realtime broadcasts of beacons and relayed data to
-            a server connected through Ethernet. A web app showed real time
-            location of high value inventory
-          </div>
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item pure-menu-selected">
+            <a href="#" class="pure-menu-link">Resume</a>
+          </li>
+          <li class="pure-menu-item pure-menu-selected">
+            <a href="https://github.com/jayantb1019" class="pure-menu-link">
+              <i
+                class="fa fa-code"
+                style="color: white; font-weight: bolder;"
+              ></i>
+            </a>
+          </li>
+          <li class="pure-menu-item">
+            <a
+              href="https://www.linkedin.com/in/jayanthboddu/"
+              class="pure-menu-link"
+            >
+              <i class="fa fa-linkedin" style="color: white;"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="splash-container">
+      <div class="splash">
+        <h1 class="splash-head">
+          Jayanth Boddu
+        </h1>
+        <div class="splash-subhead">
+          <div>jayantb1019@gmail.com</div>
+          <div>+91 7710092075</div>
+          <div>Navi Mumbai, India</div>
         </div>
       </div>
-      <div>
-        <div>EDUCATION</div>
-        <div>
-          <div>2008-2012</div>
-          <div>
-            <div>Goa College Of Engineering</div>
-            <div>Bachelors</div>
-            <div>Electronics & Telecommunication</div>
-            <div>67.3%</div>
-          </div>
+    </div>
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="pure-g">
+          <div class="l-box-lrg pure-u-1 pure-u-md-1-2">
+            <div class="content-subhead">WORK</div>
+            <div class="l-box pure-u-1">
+              <div class="side-heading">Appraisal : A/A+ throughout</div>
+              <div class="segment">
+                <div class="side-heading">2019 to present</div>
+                <div>OIL AND NATURAL GAS CORPORATION</div>
+                <div class="designation">Executive Engineer(Electronics)</div>
+                <p>
+                  Offshore Logistics,Tool Maintenance, Internal website
+                  maintenance, Offshore Logistics coordination, Procurement,
+                  Inventory tracking & Reconciliation, part of the audit team
+                </p>
+              </div>
+              <div>
+                <div class="side-heading">2015 to 2018</div>
+                <div>OIL AND NATURAL GAS CORPORATION LTD</div>
+                <div class="designation">
+                  Assistant Executive Engineer(Electronics)
+                </div>
+                <p>
+                  Internal website maintenance, inventory tracking and general
+                  administration work.
+                </p>
+              </div>
+              <div>
+                <div class="side-heading">2013 to 2014</div>
+                <div>OIL AND NATURAL GAS CORPORATION LTD</div>
+                <div class="designation">Graduate Trainee</div>
+                <p>
+                  Joined the company in Well Logging Services. Worked on
+                  maintenance of hitech wireline logging tools and coordination
+                  of maintenance processes. I was also responsible for Offshore
+                  Logistics and operations support.
+                </p>
+              </div>
+            </div>
 
-          <div>2006-2008</div>
-          <div>
-            <div>Sri Chaitanya College</div>
-            <div>Intermeddiate</div>
-            <div>Maths & Science</div>
-            <div>95.7%</div>
+            <div class="content-subhead">PROJECTS</div>
+            <div class="l-box pure-u-1">
+              <div class="side-heading">Web App for Inventory Tracking</div>
+              <div>
+                <p>
+                  Built an inventory tracking web app with all store related
+                  functionality using Full stack Javascript technologies. I used
+                </p>
+                <ul>
+                  <li>NodeJS backend</li>
+                  <li>ExpressJS web server</li>
+                  <li>Angular frontend</li>
+                  <li>MongoDB database</li>
+                </ul>
+                <div>
+                  This web app is being used internally for daily operations.
+                </div>
+              </div>
+              <div>
+                <div class="side-heading">Biometric Attendance System</div>
+                <p>
+                  Built a web based biometric attendance system. Wrote C++
+                  libraries to nodejs bindings to access device APIs. The device
+                  was connected to server hosting the web app to track
+                  attendance. Angular and bootstrap was used to build the web
+                  app. This app was used till the roll out of enterprise wide
+                  access control system.
+                </p>
+              </div>
+              <div>
+                <div class="side-heading">
+                  Asset Tracking using Bluetooth Low Energy
+                </div>
+                <p>
+                  For real time position tracking of high value assets, I
+                  developed a system involving low cost raspberry pi based
+                  scanners and BLE beacons. Beacons were attached to high value
+                  assets. Readers placed in each zone read realtime broadcasts
+                  of beacons and relayed data to a server connected through
+                  Ethernet. A web app showed real time location of high value
+                  inventory
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div>SKILLS</div>
-        <div>
-          <div>Management</div>
-          <div>
-            <div>General Administration</div>
-            <div>Logistics</div>
-            <div>Maintenance</div>
-            <div>Procurement</div>
+          <div class="l-box-lrg pure-u-1 pure-u-md-1-2">
+            <div class="content-subhead">EDUCATION</div>
+            <div class="l-box pure-u-1">
+              <div class="side-heading">2008-2012</div>
+              <div>
+                <div>Goa College Of Engineering</div>
+                <div class="designation">Bachelors</div>
+                <div>Electronics & Telecommunication</div>
+                <div style="color: black;">67.3%</div>
+              </div>
+
+              <div class="side-heading">2006-2008</div>
+              <div>
+                <div>Sri Chaitanya College</div>
+                <div class="designation">Intermeddiate</div>
+                <div>Maths & Science</div>
+                <div style="color: black;">95.7%</div>
+              </div>
+            </div>
+            <div class="content-subhead">SKILLS</div>
+            <div class="l-box pure-u-1">
+              <div class="side-heading">Management</div>
+              <div>
+                <div>General Administration</div>
+                <div>Logistics</div>
+                <div>Maintenance</div>
+                <div>Procurement</div>
+              </div>
+              <div class="side-heading">Dev</div>
+              <div>
+                <div>Angular2</div>
+                <div>NodeJs</div>
+                <div>RxJS</div>
+                <div>Redux</div>
+                <div>AWS</div>
+                <div>Cordova / PhoneGap</div>
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>Javascript</div>
+                <div>Learning Python</div>
+                <div>Matlab</div>
+              </div>
+              <div class="side-heading">UI/UX Design</div>
+              <div>
+                <div>Basic Prototyping</div>
+                <div>WireFraming</div>
+                <div>Figma</div>
+              </div>
+            </div>
+            <div class="content-subhead">WORK-LIFE BALANCE</div>
+            <div class="l-box pure-u-1">
+              <div class="side-heading">Hiking</div>
+              <p>
+                Have undertaken regular hikes to mountains in Sahyadri Range.
+                Climbed the highest peak of Maharashtra including several
+                moderate to difficult peaks
+              </p>
+              <div class="side-heading">Cycling</div>
+            </div>
           </div>
-          <div>Dev</div>
-          <div>
-            <div>Angular2</div>
-            <div>NodeJs</div>
-            <div>RxJS</div>
-            <div>Redux</div>
-            <div>AWS</div>
-            <div>Cordova / PhoneGap</div>
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>Javascript</div>
-            <div>Learning Python</div>
-            <div>Matlab</div>
-          </div>
-          <div>UI/UX Design</div>
-          <div>
-            <div>Basic Prototyping</div>
-            <div>WireFraming</div>
-            <div>Figma</div>
-          </div>
-          <div>WORK-LIFE BALANCE</div>
-          <div>Hiking</div>
-          <div>
-            Have undertaken regular hikes to mountains in Sahyadri Range.
-            Climbed the highest peak of Maharashtra including several moderate
-            to difficult peaks
-          </div>
-          <div>Cycling</div>
         </div>
       </div>
     </div>
