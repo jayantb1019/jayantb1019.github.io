@@ -294,3 +294,13 @@ a.pure-button-primary {
 .designation {
   font-weight: bold;
 }
+
+.social {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: white;
+  font-weight: lighter;
+  opacity: 0.3;
+}
