@@ -34,9 +34,23 @@
         margin-top: 30px;
       }
     </style>
+    <script>
+      function pr() {
+        var el = document.getElementById("el");
+        var header = document.getElementById("header");
+        console.log(el.scrollTop, el.scrollHeight);
+        if (el.scrollTop / el.scrollHeight >= 0.12) {
+          console.log("show header");
+          header.setAttribute("style", "display:unset");
+        } else {
+          console.log("hide header");
+          header.setAttribute("style", "display:none");
+        }
+      }
+    </script>
   </head>
-  <body>
-    <div class="header">
+  <body onscroll="pr()" id="el">
+    <div class="header" style="display: none !important;" id="header">
       <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
         <a class="pure-menu-heading" href="">Jayanth Boddu</a>
 
