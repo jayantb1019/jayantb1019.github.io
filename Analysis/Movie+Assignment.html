@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Movie+Assignment_Jayanth Boddu 20200512</title>
+<title>Movie+Assignment_Jayanth Boddu 20200512-resume</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13074,9 +13074,57 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="IMDB-Movie-Assignment">IMDB Movie Assignment<a class="anchor-link" href="#IMDB-Movie-Assignment">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Problem-Statement-:">Problem Statement :<a class="anchor-link" href="#Problem-Statement-:">&#182;</a></h3><p>I've tried to find some interesting insights into a few movies released between 1916 and 2016, using Python. I've downloaded a movie dataset, written Python code to explore the data, gained insights into the movies, actors, directors, and collections.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Contents:">Contents:<a class="anchor-link" href="#Contents:">&#182;</a></h4><ul>
+<li><a href="#Reading-and-Inspection">Reading and Inspection</a><ul>
+<li><a href="#Import-and-read">Importing and reading</a></li>
+<li><a href="#Dataframe-Inspection">Dataframe Inspection</a></li>
+</ul>
+</li>
+<li><a href="#Cleaning-the-Data">Cleaning-the-Data</a><ul>
+<li><a href="#Inspecting-Null-values">Inspecting Null values</a></li>
+<li><a href="#Dropping-unecessary-columns">Dropping unecessary columns</a></li>
+<li><a href="#Dropping-unecessary-rows-using-columns-with-high-Null-percentages">Dropping unnecessary rows</a></li>
+<li><a href="#Filling-NaN-values">Filling NaN values</a></li>
+<li><a href="#Checking-the-number-of-retained-rows">Checking retained rows</a></li>
+</ul>
+</li>
+<li><a href="#Data-Analysis">Data Analysis</a><ul>
+<li><a href="#Changing-the-unit-of-columns">Changing Units</a></li>
+<li><a href="#Finding-the-movies-with-highest-profit">Finding the movies with highest profit</a></li>
+<li><a href="#IMDb-Top-250">IMDb Top 250</a></li>
+<li><a href="#Best-Foreign-Language-Films">Best Foreign Language Films</a></li>
+<li><a href="#Finding-the-best-directors">Best directors</a></li>
+<li><a href="#Most-popular-genres">Most popular genres</a></li>
+<li><a href="#Critic-favorite-and-Audience-favorite-actors">Critic favorite and Audience favorite actors</a></li>
+<li><a href="#Movie-Votes-by-Decade">Movie Votes by Decade</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Supress Warnings</span>
@@ -13091,7 +13139,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import the numpy and pandas packages</span>
@@ -13109,17 +13157,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Task-1:-Reading-and-Inspection">Task 1: Reading and Inspection<a class="anchor-link" href="#Task-1:-Reading-and-Inspection">&#182;</a></h2><ul>
-<li>### Subtask 1.1: Import and read</li>
-</ul>
-<p>Import and read the movie database. Store it in a variable called <code>movies</code>.</p>
+<h2 id="Reading-and-Inspection">Reading and Inspection<a class="anchor-link" href="#Reading-and-Inspection">&#182;</a></h2><h3 id="----Importing-and-reading">-   Importing and reading<a class="anchor-link" href="#----Importing-and-reading">&#182;</a></h3><p>Import and read the movie database. Store it in a variable called <code>movies</code>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">movies</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./Movie+Assignment+Data.csv&#39;</span><span class="p">)</span><span class="c1"># Write your code for importing the csv file here</span>
@@ -13136,7 +13181,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[54]:</div>
 
 
 
@@ -13462,17 +13507,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>### Subtask 1.2: Inspect the dataframe</li>
-</ul>
-<p>Inspect the dataframe's columns, shapes, variable types etc.</p>
+<h3 id="----Dataframe-Inspection">-   Dataframe Inspection<a class="anchor-link" href="#----Dataframe-Inspection">&#182;</a></h3><p>Inspecting the dataframe's columns, shapes, variable types etc.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for inspection here</span>
@@ -13509,7 +13551,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#The list of column names converted to a list </span>
@@ -13543,7 +13585,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Column wise data types as a Series</span>
@@ -13606,7 +13648,7 @@ dtype: object
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Column wise data counts i.e total non-missing values per columnn, as a Series</span>
@@ -13669,7 +13711,7 @@ dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># dataframe info </span>
@@ -13739,7 +13781,7 @@ Column   : Values
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># description</span>
@@ -13756,7 +13798,7 @@ Column   : Values
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[60]:</div>
 
 
 
@@ -13964,22 +14006,17 @@ Column   : Values
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Task-2:-Cleaning-the-Data">Task 2: Cleaning the Data<a class="anchor-link" href="#Task-2:-Cleaning-the-Data">&#182;</a></h2><ul>
-<li>### Subtask 2.1: Inspect Null values</li>
-</ul>
-<p>Find out the number of Null values in all the columns and rows. Also, find the percentage of Null values in each column. Round off the percentages upto two decimal places.</p>
+<h2 id="Cleaning-the-Data">Cleaning the Data<a class="anchor-link" href="#Cleaning-the-Data">&#182;</a></h2><h3 id="--Inspecting-Null-values">- Inspecting Null values<a class="anchor-link" href="#--Inspecting-Null-values">&#182;</a></h3><p>Finding out the number of Null values in all the columns and rows. Also, finding the percentage of Null values in each column. Rounding off the percentages upto two decimal places.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for column-wise null count here</span>
-
-<span class="c1"># No of rows containing null values in each column.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># No of rows containing null values in each column.</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Column Name   </span><span class="se">\t</span><span class="s1">: </span><span class="se">\t</span><span class="s1">Total Null Rows  </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">movies</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
 </pre></div>
 
@@ -14037,12 +14074,10 @@ dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for row-wise null count here</span>
-
-<span class="c1"># No of columns containing null values in each row.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># No of columns containing null values in each row.</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Row Index : </span><span class="se">\t</span><span class="s1">Total Null Columns  </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">movies</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
 </pre></div>
 
@@ -14083,12 +14118,10 @@ Length: 5043, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for column-wise null percentages here</span>
-
-<span class="c1"># (Total null rows per column / Total rows in the data frame) * 100 , rounded to 2 decimals, DataType : Series</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># (Total null rows per column / Total rows in the data frame) * 100 , rounded to 2 decimals, DataType : Series</span>
 <span class="n">column_nulls</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">((</span><span class="n">movies</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="n">movies</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Column Name : </span><span class="se">\t\t</span><span class="s1">Null Columns (%)  </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">column_nulls</span><span class="p">)</span>
@@ -14149,10 +14182,7 @@ dtype: float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>### Subtask 2.2: Drop unecessary columns</li>
-</ul>
-<p>For this assignment, you will mostly be analyzing the movies with respect to the ratings, gross collection, popularity of movies, etc. So many of the columns in this dataframe are not required. So it is advised to drop the following columns.</p>
+<h3 id="--Dropping-unecessary-columns">- Dropping unecessary columns<a class="anchor-link" href="#--Dropping-unecessary-columns">&#182;</a></h3><p>In this analysis, we will mostly be analyzing the movies with respect to the ratings, gross collection, popularity of movies, etc. So many of the columns in this dataframe are not required. So we drop the following columns.</p>
 <ul>
 <li>color</li>
 <li>director_facebook_likes</li>
@@ -14176,11 +14206,10 @@ dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for dropping the columns here. It is advised to keep inspecting the dataframe after each set of operations </span>
-<span class="n">columns_to_drop</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">,</span><span class="s1">&#39;director_facebook_likes&#39;</span><span class="p">,</span><span class="s1">&#39;actor_1_facebook_likes&#39;</span><span class="p">,</span><span class="s1">&#39;actor_2_facebook_likes&#39;</span><span class="p">,</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">columns_to_drop</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">,</span><span class="s1">&#39;director_facebook_likes&#39;</span><span class="p">,</span><span class="s1">&#39;actor_1_facebook_likes&#39;</span><span class="p">,</span><span class="s1">&#39;actor_2_facebook_likes&#39;</span><span class="p">,</span>
                    <span class="s1">&#39;actor_3_facebook_likes&#39;</span><span class="p">,</span><span class="s1">&#39;actor_2_name&#39;</span><span class="p">,</span><span class="s1">&#39;cast_total_facebook_likes&#39;</span><span class="p">,</span><span class="s1">&#39;actor_3_name&#39;</span><span class="p">,</span>
                    <span class="s1">&#39;duration&#39;</span><span class="p">,</span><span class="s1">&#39;facenumber_in_poster&#39;</span><span class="p">,</span><span class="s1">&#39;content_rating&#39;</span><span class="p">,</span><span class="s1">&#39;country&#39;</span><span class="p">,</span><span class="s1">&#39;movie_imdb_link&#39;</span><span class="p">,</span>
                    <span class="s1">&#39;aspect_ratio&#39;</span><span class="p">,</span><span class="s1">&#39;plot_keywords&#39;</span><span class="p">]</span>
@@ -14200,7 +14229,7 @@ dtype: float64
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[64]:</div>
 
 
 
@@ -14218,22 +14247,17 @@ dtype: float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>### Subtask 2.3: Drop unecessary rows using columns with high Null percentages</li>
-</ul>
-<p>Now, on inspection you might notice that some columns have large percentage (greater than 5%) of Null values. Drop all the rows which have Null values for such columns.</p>
+<h3 id="--Dropping-unecessary-rows-using-columns-with-high-Null-percentages">- Dropping unecessary rows using columns with high Null percentages<a class="anchor-link" href="#--Dropping-unecessary-rows-using-columns-with-high-Null-percentages">&#182;</a></h3><p>Now, on inspection you might notice that some columns have large percentage (greater than 5%) of Null values. Drop all the rows which have Null values for such columns.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for dropping the rows here</span>
-
-<span class="c1"># columns with null (%) &gt; 5</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># columns with null (%) &gt; 5</span>
 <span class="n">column_nulls</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">((</span><span class="n">movies</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="n">movies</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">high_null_columns</span> <span class="o">=</span> <span class="n">column_nulls</span><span class="p">[</span><span class="n">column_nulls</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">high_null_columns</span><span class="p">)</span>
@@ -14266,7 +14290,7 @@ dtype: float64
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[65]:</div>
 
 
 
@@ -14496,22 +14520,17 @@ dtype: float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>### Subtask 2.4: Fill NaN values</li>
-</ul>
-<p>You might notice that the <code>language</code> column has some NaN values. Here, on inspection, you will see that it is safe to replace all the missing values with <code>'English'</code>.</p>
+<h3 id="--Filling-NaN-values">- Filling NaN values<a class="anchor-link" href="#--Filling-NaN-values">&#182;</a></h3><p>You might notice that the <code>language</code> column has some NaN values. Here, on inspection, you will see that it is safe to replace all the missing values with <code>'English'</code>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for filling the NaN values in the &#39;language&#39; column here</span>
-
-<span class="c1"># 12 NAs in language column from code block #42 output</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 12 NAs in language column</span>
 
 <span class="c1"># Filling NAs with &#39;English&#39; </span>
 <span class="n">movies</span><span class="o">.</span><span class="n">fillna</span><span class="p">({</span><span class="s1">&#39;language&#39;</span> <span class="p">:</span> <span class="s1">&#39;English&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -14528,7 +14547,7 @@ dtype: float64
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[66]:</div>
 
 
 
@@ -14758,21 +14777,17 @@ dtype: float64
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>### Subtask 2.5: Check the number of retained rows</li>
-</ul>
-<p>You might notice that two of the columns viz. <code>num_critic_for_reviews</code> and <code>actor_1_name</code> have small percentages of NaN values left. You can let these columns as it is for now. Check the number and percentage of the rows retained after completing all the tasks above.</p>
+<h3 id="--Checking-the-number-of-retained-rows">- Checking the number of retained rows<a class="anchor-link" href="#--Checking-the-number-of-retained-rows">&#182;</a></h3><p>You might notice that two of the columns viz. <code>num_critic_for_reviews</code> and <code>actor_1_name</code> have small percentages of NaN values left. You can let these columns as it is for now. Check the number and percentage of the rows retained after completing all the tasks above.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for checking number of retained rows here</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Column Name : </span><span class="se">\t\t</span><span class="s1">Total Null Rows  </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">movies</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Column Name : </span><span class="se">\t\t</span><span class="s1">Total Null Rows  </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">movies</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">)</span>
 
 <span class="c1"># Retained column % = (Current Columns / Initial Columns) * 100</span>
 <span class="c1">#shape contains the shape of the original imported movies dataset</span>
@@ -14825,30 +14840,17 @@ Retained rows wrt to origin dataframe : 77.15645449137418 %
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Checkpoint 1:</strong> You might have noticed that we still have around <code>77%</code> of the rows!</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Task-3:-Data-Analysis">Task 3: Data Analysis<a class="anchor-link" href="#Task-3:-Data-Analysis">&#182;</a></h2><ul>
-<li>### Subtask 3.1: Change the unit of columns</li>
-</ul>
-<p>Convert the unit of the <code>budget</code> and <code>gross</code> columns from <code>$</code> to <code>million $</code>.</p>
+<h2 id="Data-Analysis">Data Analysis<a class="anchor-link" href="#Data-Analysis">&#182;</a></h2><h3 id="--Changing-the-unit-of-columns">- Changing the unit of columns<a class="anchor-link" href="#--Changing-the-unit-of-columns">&#182;</a></h3><p>Converting the unit of the <code>budget</code> and <code>gross</code> columns from <code>$</code> to <code>million $</code>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for unit conversion here</span>
-
-<span class="c1">#Not rounding off to preserve accuracy</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Not rounding off to preserve accuracy</span>
 <span class="n">movies</span><span class="p">[</span><span class="s1">&#39;budget&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">movies</span><span class="p">[</span><span class="s1">&#39;budget&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">10</span><span class="o">**</span><span class="mi">6</span>
 <span class="n">movies</span><span class="p">[</span><span class="s1">&#39;gross&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">movies</span><span class="p">[</span><span class="s1">&#39;gross&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">10</span><span class="o">**</span><span class="mi">6</span>
 <span class="n">movies</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -14864,7 +14866,7 @@ Retained rows wrt to origin dataframe : 77.15645449137418 %
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[68]:</div>
 
 
 
@@ -15077,26 +15079,21 @@ Retained rows wrt to origin dataframe : 77.15645449137418 %
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><p>### Subtask 3.2: Find the movies with highest profit</p>
-<ol>
-<li>Create a new column called <code>profit</code> which contains the difference of the two columns: <code>gross</code> and <code>budget</code>.</li>
-<li>Sort the dataframe using the <code>profit</code> column as reference.</li>
-<li>Plot <code>profit</code> (y-axis) vs <code>budget</code> (x- axis) and observe the outliers using the appropriate chart type.</li>
-<li>Extract the top ten profiting movies in descending order and store them in a new dataframe - <code>top10</code></li>
-</ol>
-</li>
-</ul>
+<h3 id="--Finding-the-movies-with-highest-profit">- Finding the movies with highest profit<a class="anchor-link" href="#--Finding-the-movies-with-highest-profit">&#182;</a></h3>
+<pre><code>1. Creating a new column called `profit` which contains the difference of the two columns: `gross` and `budget`.
+2. Sorting the dataframe using the `profit` column as reference.
+3. Plotting `profit` (y-axis) vs `budget` (x- axis) and observe the outliers using the appropriate chart type.
+4. Extracting the top ten profiting movies in descending order and store them in a new dataframe - `top10`</code></pre>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for creating the profit column here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># creating the profit column</span>
 <span class="n">movies</span><span class="p">[</span><span class="s1">&#39;profit&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">movies</span><span class="p">[</span><span class="s1">&#39;gross&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">movies</span><span class="p">[</span><span class="s1">&#39;budget&#39;</span><span class="p">]</span>
 <span class="n">movies</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -15111,7 +15108,7 @@ Retained rows wrt to origin dataframe : 77.15645449137418 %
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[69]:</div>
 
 
 
@@ -15249,10 +15246,10 @@ Retained rows wrt to origin dataframe : 77.15645449137418 %
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for sorting the dataframe here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># sorting the dataframe</span>
 <span class="n">movies</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;profit&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">movies</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -15267,7 +15264,7 @@ Retained rows wrt to origin dataframe : 77.15645449137418 %
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[70]:</div>
 
 
 
@@ -15405,10 +15402,10 @@ Retained rows wrt to origin dataframe : 77.15645449137418 %
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write code for profit vs budget plot here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># profit vs budget plot</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
 
 <span class="n">movies</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="s1">&#39;budget&#39;</span><span class="p">,</span> <span class="s1">&#39;profit&#39;</span><span class="p">)</span>
@@ -15445,7 +15442,7 @@ Retained rows wrt to origin dataframe : 77.15645449137418 %
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#outliers </span>
@@ -15462,7 +15459,7 @@ Retained rows wrt to origin dataframe : 77.15645449137418 %
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[72]:</div>
 
 
 
@@ -15484,12 +15481,10 @@ Name: movie_title, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code to get the top 10 profiting movies here</span>
-
-<span class="c1"># movies is already sorted by profit in the previous step </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># movies is already sorted by profit in the previous step </span>
 <span class="c1">#top 10 movies by profit</span>
 <span class="n">top10</span> <span class="o">=</span> <span class="n">movies</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
 <span class="n">top10</span>
@@ -15505,7 +15500,7 @@ Name: movie_title, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[73]:</div>
 
 
 
@@ -15729,22 +15724,17 @@ Name: movie_title, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>### Subtask 3.3: Drop duplicate values</li>
-</ul>
-<p>After you found out the top 10 profiting movies, you might have noticed a duplicate value. So, it seems like the dataframe has duplicate values as well. Drop the duplicate values from the dataframe and repeat <code>Subtask 3.2</code>. Note that the same <code>movie_title</code> can be there in different languages.</p>
+<h3 id="--Dropping-duplicate-values">- Dropping duplicate values<a class="anchor-link" href="#--Dropping-duplicate-values">&#182;</a></h3><p>Out of the top 10 profiting movies, you might have noticed a duplicate value. So, it seems like the dataframe has duplicate values as well. Dropping the duplicate values from the dataframe and repeat the previous task. Note that the same <code>movie_title</code> can be there in different languages.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for dropping duplicate values here</span>
-
-<span class="c1"># dropping duplicates considering all columns and retaining the first row among duplicate rows</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># dropping duplicates considering all columns and retaining the first row among duplicate rows</span>
 <span class="n">movies</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
@@ -15755,10 +15745,10 @@ Name: movie_title, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write code for repeating subtask 2 here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># code for repeating the previous task</span>
 <span class="n">movies_by_profit</span> <span class="o">=</span> <span class="n">movies</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;profit&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">top10</span> <span class="o">=</span> <span class="n">movies_by_profit</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
 <span class="n">top10</span>
@@ -15774,7 +15764,7 @@ Name: movie_title, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[75]:</div>
 
 
 
@@ -15998,34 +15988,22 @@ Name: movie_title, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Checkpoint 2:</strong> You might spot two movies directed by <code>James Cameron</code> in the list.</p>
+<h3 id="--IMDb-Top-250">- IMDb Top 250<a class="anchor-link" href="#--IMDb-Top-250">&#182;</a></h3>
+<pre><code>1. Creating a new dataframe `IMDb_Top_250` and storing the top 250 movies with the highest IMDb Rating (corresponding to the column: `imdb_score`). We are considering only those movies with `num_voted_users` is greater than 25,000.
+</code></pre>
+<p>We shall add a <code>Rank</code> column containing the values 1 to 250 indicating the ranks of the corresponding films.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><p>### Subtask 3.4: Find IMDb Top 250</p>
-<ol>
-<li>Create a new dataframe <code>IMDb_Top_250</code> and store the top 250 movies with the highest IMDb Rating (corresponding to the column: <code>imdb_score</code>). Also make sure that for all of these movies, the <code>num_voted_users</code> is greater than 25,000.
-Also add a <code>Rank</code> column containing the values 1 to 250 indicating the ranks of the corresponding films.</li>
-<li>Extract all the movies in the <code>IMDb_Top_250</code> dataframe which are not in the English language and store them in a new dataframe named <code>Top_Foreign_Lang_Film</code>.</li>
-</ol>
-</li>
-</ul>
+<pre><code>2. We shall also extract the movies in the `IMDb_Top_250` dataframe which are not in the English language and store them in a new dataframe named `Top_Foreign_Lang_Film`.</code></pre>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for extracting the top 250 movies as per the IMDb score here. Make sure that you store it in a new dataframe </span>
-<span class="c1"># and name that dataframe as &#39;IMDb_Top_250&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># code for extracting the top 250 movies as per the IMDb score.</span>
 
 <span class="c1"># selecting movies where the number of voted users is greater than 25000.</span>
 <span class="c1"># sorting the selection by imdb_score in descending order</span>
@@ -16049,7 +16027,7 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[25]:</div>
+    <div class="prompt output_prompt">Out[76]:</div>
 
 
 
@@ -16191,9 +16169,16 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="--Best-Foreign-Language-Films">- Best Foreign Language Films<a class="anchor-link" href="#--Best-Foreign-Language-Films">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Best Foreign Language films</span>
@@ -16215,7 +16200,7 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[77]:</div>
 
 
 
@@ -16954,7 +16939,7 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Checkpoint 3:</strong> Can you spot <code>Veer-Zaara</code> in the dataframe?</p>
+<p><strong>Can you spot <code>Veer-Zaara</code> in the dataframe?</strong></p>
 
 </div>
 </div>
@@ -16962,24 +16947,19 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><p>### Subtask 3.5: Find the best directors</p>
-<ol>
-<li>Group the dataframe using the <code>director_name</code> column.</li>
-<li>Find out the top 10 directors for whom the mean of <code>imdb_score</code> is the highest and store them in a new dataframe <code>top10director</code>.  Incase of a tie in IMDb score between two directors, sort them alphabetically. </li>
-</ol>
-</li>
-</ul>
+<h3 id="--Finding-the-best-directors">- Finding the best directors<a class="anchor-link" href="#--Finding-the-best-directors">&#182;</a></h3>
+<pre><code>1. Grouping the dataframe using the `director_name` column.
+2. Finding the top 10 directors for whom the mean of `imdb_score` is the highest and storing them in a new dataframe `top10director`.  Incase of a tie in IMDb score between two directors, we sort them alphabetically. </code></pre>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for extracting the top 10 directors here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Code for extracting the top 10 directors</span>
 
 <span class="c1">#Grouping &#39;movies&#39; dataframe by &#39;director_name&#39;. </span>
 <span class="c1"># Calculating mean of &#39;imdb_score&#39; for each &#39;director_name&#39;</span>
@@ -17011,7 +16991,7 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[78]:</div>
 
 
 
@@ -17103,7 +17083,7 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Checkpoint 4:</strong> No surprises that <code>Damien Chazelle</code> (director of Whiplash and La La Land) is in this list.</p>
+<p><strong>No surprises that <code>Damien Chazelle</code> (director of Whiplash and La La Land) is in this list.</strong></p>
 
 </div>
 </div>
@@ -17111,14 +17091,11 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>### Subtask 3.6: Find popular genres</li>
-</ul>
-<p>You might have noticed the <code>genres</code> column in the dataframe with all the genres of the movies seperated by a pipe (<code>|</code>). Out of all the movie genres, the first two are most significant for any film.</p>
+<h3 id="--Most-Popular-genres">- Most Popular genres<a class="anchor-link" href="#--Most-Popular-genres">&#182;</a></h3><p>You might have noticed the <code>genres</code> column in the dataframe with all the genres of the movies seperated by a pipe (<code>|</code>). Out of all the movie genres, the first two are most significant for any film.</p>
 <ol>
-<li>Extract the first two genres from the <code>genres</code> column and store them in two new columns: <code>genre_1</code> and <code>genre_2</code>. Some of the movies might have only one genre. In such cases, extract the single genre into both the columns, i.e. for such movies the <code>genre_2</code> will be the same as <code>genre_1</code>.</li>
-<li>Group the dataframe using <code>genre_1</code> as the primary column and <code>genre_2</code> as the secondary column.</li>
-<li>Find out the 5 most popular combo of genres by finding the mean of the gross values using the <code>gross</code> column and store them in a new dataframe named <code>PopGenre</code>.</li>
+<li>We extract the first two genres from the <code>genres</code> column and storing them in two new columns: <code>genre_1</code> and <code>genre_2</code>. Some of the movies might have only one genre. In such cases, we extract the single genre into both the columns, i.e. for such movies the <code>genre_2</code> will be the same as <code>genre_1</code>.</li>
+<li>We group the dataframe using <code>genre_1</code> as the primary column and <code>genre_2</code> as the secondary column.</li>
+<li>Then we look for 5 most popular combo of genres by finding the mean of the gross values using the <code>gross</code> column and store them in a new dataframe named <code>PopGenre</code>.</li>
 </ol>
 
 </div>
@@ -17126,12 +17103,10 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for extracting the first two genres of each movie here</span>
-
-<span class="c1"># splitting genre into genre_1 and genre_2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># splitting genre into genre_1 and genre_2</span>
 <span class="n">movies</span><span class="p">[</span><span class="s1">&#39;genre_1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">movies</span><span class="p">[</span><span class="s1">&#39;genres&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
 
 <span class="k">def</span> <span class="nf">genre_2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">:</span> 
@@ -17155,7 +17130,7 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[50]:</div>
+    <div class="prompt output_prompt">Out[79]:</div>
 
 
 
@@ -17194,7 +17169,6 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
       <th>profit</th>
       <th>genre_1</th>
       <th>genre_2</th>
-      <th>decade</th>
     </tr>
   </thead>
   <tbody>
@@ -17216,7 +17190,6 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
       <td>242.313371</td>
       <td>Comedy</td>
       <td>Comedy</td>
-      <td>2000</td>
     </tr>
     <tr>
       <th>2916</th>
@@ -17236,7 +17209,6 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
       <td>196.565000</td>
       <td>Horror</td>
       <td>Horror</td>
-      <td>1970</td>
     </tr>
     <tr>
       <th>440</th>
@@ -17256,7 +17228,6 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
       <td>174.455986</td>
       <td>Comedy</td>
       <td>Comedy</td>
-      <td>2010</td>
     </tr>
     <tr>
       <th>1868</th>
@@ -17276,7 +17247,6 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
       <td>147.825435</td>
       <td>Drama</td>
       <td>Drama</td>
-      <td>1980</td>
     </tr>
     <tr>
       <th>1875</th>
@@ -17296,11 +17266,9 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
       <td>144.705587</td>
       <td>Drama</td>
       <td>Drama</td>
-      <td>2010</td>
     </tr>
     <tr>
       <th>...</th>
-      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -17336,7 +17304,6 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
       <td>-47.824688</td>
       <td>Comedy</td>
       <td>Comedy</td>
-      <td>2010</td>
     </tr>
     <tr>
       <th>4397</th>
@@ -17356,7 +17323,6 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
       <td>-69.870681</td>
       <td>Romance</td>
       <td>Romance</td>
-      <td>2000</td>
     </tr>
     <tr>
       <th>1782</th>
@@ -17376,7 +17342,6 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
       <td>-149.237822</td>
       <td>Documentary</td>
       <td>Documentary</td>
-      <td>2000</td>
     </tr>
     <tr>
       <th>2740</th>
@@ -17396,7 +17361,6 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
       <td>-299.897945</td>
       <td>Action</td>
       <td>Action</td>
-      <td>2000</td>
     </tr>
     <tr>
       <th>3075</th>
@@ -17416,11 +17380,10 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
       <td>-696.724557</td>
       <td>Drama</td>
       <td>Drama</td>
-      <td>2000</td>
     </tr>
   </tbody>
 </table>
-<p>382 rows × 17 columns</p>
+<p>382 rows × 16 columns</p>
 </div>
 </div>
 
@@ -17432,7 +17395,7 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># grouping movies by genre_1 and genre_2 </span>
@@ -17453,7 +17416,7 @@ Also add a <code>Rank</code> column containing the values 1 to 250 indicating th
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[80]:</div>
 
 
 
@@ -17476,7 +17439,7 @@ Name: gross, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for getting the 5 most popular combo of genres here</span>
@@ -17494,7 +17457,7 @@ Name: gross, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[81]:</div>
 
 
 
@@ -17526,29 +17489,25 @@ Name: gross, dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><p>### Subtask 3.7: Find the critic-favorite and audience-favorite actors</p>
-<ol>
-<li>Create three new dataframes namely, <code>Meryl_Streep</code>, <code>Leo_Caprio</code>, and <code>Brad_Pitt</code> which contain the movies in which the actors: 'Meryl Streep', 'Leonardo DiCaprio', and 'Brad Pitt' are the lead actors. Use only the <code>actor_1_name</code> column for extraction. Also, make sure that you use the names 'Meryl Streep', 'Leonardo DiCaprio', and 'Brad Pitt' for the said extraction.</li>
-<li>Append the rows of all these dataframes and store them in a new dataframe named <code>Combined</code>.</li>
-<li>Group the combined dataframe using the <code>actor_1_name</code> column.</li>
-<li>Find the mean of the <code>num_critic_for_reviews</code> and <code>num_users_for_review</code> and identify the actors which have the highest mean.</li>
-<li>Observe the change in number of voted users over decades using a bar chart. Create a column called <code>decade</code> which represents the decade to which every movie belongs to. For example, the  <code>title_year</code>  year 1923, 1925 should be stored as 1920s. Sort the dataframe based on the column <code>decade</code>, group it by <code>decade</code> and find the sum of users voted in each decade. Store this in a new data frame called <code>df_by_decade</code>.</li>
-</ol>
-</li>
-</ul>
+<h3 id="--Critic-favorite-and-Audience-favorite-actors">- Critic favorite and Audience favorite actors<a class="anchor-link" href="#--Critic-favorite-and-Audience-favorite-actors">&#182;</a></h3>
+<pre><code>1. We create three new dataframes namely, `Meryl_Streep`, `Leo_Caprio`, and `Brad_Pitt` which contain the movies in which the actors: 'Meryl Streep', 'Leonardo DiCaprio', and 'Brad Pitt' are the lead actors. Use only the `actor_1_name` column for extraction.
+2. We append the rows of all these dataframes and store them in a new dataframe named `Combined`.
+3. We group the combined dataframe using the `actor_1_name` column.
+4. We then find the mean of the `num_critic_for_reviews` and `num_users_for_review` and identify the actors which have the highest mean.    
+
+
+</code></pre>
+<p>Observe the change in number of voted users over decades using a bar chart. We create a column called <code>decade</code> which represents the decade to which every movie belongs to. For example, the  <code>title_year</code>  year 1923, 1925 should be stored as 1920s. We sort the dataframe based on the column <code>decade</code>, group it by <code>decade</code> and find the sum of users voted in each decade. This new data frame is called <code>df_by_decade</code>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for creating three new dataframes here</span>
-
-<span class="n">Meryl_Streep</span> <span class="o">=</span> <span class="n">movies</span><span class="p">[</span><span class="n">movies</span><span class="p">[</span><span class="s1">&#39;actor_1_name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Meryl Streep&#39;</span><span class="p">]</span><span class="c1"># Include all movies in which Meryl_Streep is the lead</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Meryl_Streep</span> <span class="o">=</span> <span class="n">movies</span><span class="p">[</span><span class="n">movies</span><span class="p">[</span><span class="s1">&#39;actor_1_name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Meryl Streep&#39;</span><span class="p">]</span><span class="c1"># Include all movies in which Meryl_Streep is the lead</span>
 </pre></div>
 
     </div>
@@ -17558,7 +17517,7 @@ Name: gross, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Leo_Caprio</span> <span class="o">=</span> <span class="n">movies</span><span class="p">[</span><span class="n">movies</span><span class="p">[</span><span class="s1">&#39;actor_1_name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Leonardo DiCaprio&#39;</span><span class="p">]</span> <span class="c1"># Include all movies in which Leo_Caprio is the lead</span>
@@ -17571,7 +17530,7 @@ Name: gross, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Brad_Pitt</span> <span class="o">=</span> <span class="n">movies</span><span class="p">[</span><span class="n">movies</span><span class="p">[</span><span class="s1">&#39;actor_1_name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Brad Pitt&#39;</span><span class="p">]</span>  <span class="c1"># Include all movies in which Brad_Pitt is the lead</span>
@@ -17584,10 +17543,10 @@ Name: gross, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for combining the three dataframes here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># code for combining the three dataframes</span>
 <span class="n">Combined</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">Meryl_Streep</span><span class="p">,</span><span class="n">Leo_Caprio</span><span class="p">,</span><span class="n">Brad_Pitt</span><span class="p">])</span>
 <span class="n">Combined</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -17602,7 +17561,7 @@ Name: gross, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[85]:</div>
 
 
 
@@ -17752,10 +17711,10 @@ Name: gross, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for grouping the combined dataframe here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># code for grouping the combined dataframe</span>
 <span class="n">reviews_by_actor</span> <span class="o">=</span> <span class="n">Combined</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;actor_1_name&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -17766,10 +17725,10 @@ Name: gross, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[87]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write the code for finding the mean of critic reviews and audience reviews here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Finding the mean of critic reviews and audience reviews</span>
 
 <span class="c1"># actors vs mean critic reviews in descending order</span>
 <span class="n">critic_reviews</span> <span class="o">=</span> <span class="n">reviews_by_actor</span><span class="p">[</span><span class="s1">&#39;num_critic_for_reviews&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -17822,17 +17781,17 @@ Actor with highest mean user reviews :  Leonardo DiCaprio
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Checkpoint 6:</strong> <code>Leonardo</code> has aced both the lists!</p>
+<p><strong><code>Leonardo</code> has aced both the lists!</strong></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[88]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write the code for calculating decade here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># calculating decade</span>
 
 <span class="c1"># Function to convert years into decades</span>
 <span class="n">decade_fn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vectorize</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="nb">int</span><span class="p">((</span><span class="n">x</span><span class="o">//</span><span class="mi">10</span><span class="p">)</span><span class="o">*</span><span class="mi">10</span> <span class="p">))</span>
@@ -17851,7 +17810,7 @@ Actor with highest mean user reviews :  Leonardo DiCaprio
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[89]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for creating the data frame df_by_decade here </span>
@@ -17870,7 +17829,7 @@ Actor with highest mean user reviews :  Leonardo DiCaprio
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[89]:</div>
 
 
 
@@ -17959,12 +17918,19 @@ Actor with highest mean user reviews :  Leonardo DiCaprio
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Movie-Votes-by-Decade">Movie Votes by Decade<a class="anchor-link" href="#Movie-Votes-by-Decade">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[90]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your code for plotting number of voted users vs decade</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plotting number of voted users vs decade</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;decade&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;num_voted_users&#39;</span><span class="p">,</span><span class="n">data</span> <span class="o">=</span> <span class="n">df_by_decade</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Decade&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;No of votes&#39;</span><span class="p">)</span>
@@ -17995,6 +17961,19 @@ Actor with highest mean user reviews :  Leonardo DiCaprio
 
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
 </div>
 </div>
 
