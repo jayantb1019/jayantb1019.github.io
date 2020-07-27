@@ -304,3 +304,6 @@ a.pure-button-primary {
   font-weight: lighter;
   opacity: 0.3;
 }
+.pure-menu-link {
+  text-align: left;
+}
