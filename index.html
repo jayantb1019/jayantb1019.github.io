@@ -57,7 +57,9 @@
   <body id="el">
     <div class="header" id="header">
       <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">Jayanth Boddu</a>
+        <a class="pure-menu-heading" href="https://jayantb1019.github.io"
+          >Jayanth Boddu</a
+        >
 
         <ul class="pure-menu-list">
           <!-- <li class="pure-menu-item pure-menu-selected">
@@ -77,6 +79,7 @@
               <li class="pure-menu-item">
                 <a
                   href="./certificates/ascii Emerging Technologies 20191108.pdf"
+                  target="_blank"
                   class="pure-menu-link"
                   >Big Data, IoT, BlockChain</a
                 >
@@ -84,6 +87,7 @@
               <li class="pure-menu-item">
                 <a
                   href="./certificates/Coursera ai for everyone 20191213.pdf"
+                  target="_blank"
                   class="pure-menu-link"
                   >AI for Everyone</a
                 >
@@ -92,12 +96,14 @@
                 <a
                   href="./certificates/kaggle python 20200204.pdf"
                   class="pure-menu-link"
+                  target="_blank"
                   >Kaggle - Python</a
                 >
               </li>
               <li class="pure-menu-item">
                 <a
                   href="./certificates/kaggle pandas 20200218.pdf"
+                  target="_blank"
                   class="pure-menu-link"
                   >Kaggle - Pandas</a
                 >
@@ -106,6 +112,7 @@
                 <a
                   href="./certificates/kaggle data visualization 20200213.pdf"
                   class="pure-menu-link"
+                  target="_blank"
                   >Kaggle - Data Visualization</a
                 >
               </li>
@@ -113,6 +120,7 @@
                 <a
                   href="./certificates/kaggle Introduction to Machine Learning 20200207.pdf"
                   class="pure-menu-link"
+                  target="_blank"
                   >Kaggle - Intro to Machine Learning</a
                 >
               </li>
@@ -120,6 +128,7 @@
                 <a
                   href="./certificates/kaggle Intermeddiate Machine Learning 20200213.pdf"
                   class="pure-menu-link"
+                  target="_blank"
                   >Kaggle - Intermediate Machine Learning</a
                 >
               </li>
@@ -127,6 +136,7 @@
                 <a
                   href="./certificates/Coursera EDA with seaborn 20200523.pdf"
                   class="pure-menu-link"
+                  target="_blank"
                   >Exploratory Data Analysis Project</a
                 >
               </li>
@@ -134,6 +144,7 @@
                 <a
                   href="./certificates/upgrad - preparatory course -20200407.pdf"
                   class="pure-menu-link"
+                  target="_blank"
                   >Upgrad - PGDDS - Preparatory Course</a
                 >
               </li>
@@ -141,6 +152,7 @@
                 <a
                   href="./certificates/upgrad-datatoolkit.pdf"
                   class="pure-menu-link"
+                  target="_blank"
                   >Upgrad - PGDDS - Data Toolkit</a
                 >
               </li>
@@ -199,6 +211,7 @@
               <li class="pure-menu-item">
                 <a
                   href="https://1drv.ms/u/s!Akaq7WVeNvkph0R3mqS2laHN2V-r"
+                  target="_blank"
                   class="pure-menu-link"
                   >Math For ML</a
                 >
@@ -207,6 +220,7 @@
                 <a
                   href="https://1drv.ms/u/s!Akaq7WVeNvkph0R3mqS2laHN2V-r"
                   class="pure-menu-link"
+                  target="_blank"
                   >Regression Analysis</a
                 >
               </li>
@@ -214,6 +228,7 @@
                 <a
                   href="https://1drv.ms/u/s!Akaq7WVeNvkph0R3mqS2laHN2V-r"
                   class="pure-menu-link"
+                  target="_blank"
                   >Intro to Statistical Learning</a
                 >
               </li>
@@ -234,13 +249,18 @@
                 <a
                   href="./presentations/Errors in Hypothesis Testing slideshow.html"
                   class="pure-menu-link"
+                  target="_blank"
                   >Errors in Hypothesis</a
                 >
               </li>
             </ul>
           </li>
           <li class="pure-menu-item pure-menu-selected">
-            <a href="https://github.com/jayantb1019" class="pure-menu-link">
+            <a
+              href="https://github.com/jayantb1019"
+              target="_blank"
+              class="pure-menu-link"
+            >
               <i
                 class="fa fa-code"
                 style="color: white; font-weight: bolder;"
@@ -251,6 +271,7 @@
             <a
               href="https://www.linkedin.com/in/jayanthboddu/"
               class="pure-menu-link"
+              target="_blank"
             >
               <i class="fa fa-linkedin" style="color: white;"></i>
             </a>
@@ -590,18 +611,25 @@
               <a href="#" class="pure-menu-link">About</a>
             </li>
             <li class="pure-menu-item">
-              <a href="http://twitter.com/JayanthBoddu/" class="pure-menu-link"
+              <a
+                href="http://twitter.com/JayanthBoddu/"
+                target="_blank"
+                class="pure-menu-link"
                 >Twitter</a
               >
             </li>
             <li class="pure-menu-item">
-              <a href="https://github.com/jayantb1019" class="pure-menu-link"
+              <a
+                href="https://github.com/jayantb1019"
+                target="_blank"
+                class="pure-menu-link"
                 >GitHub</a
               >
             </li>
             <li class="pure-menu-item">
               <a
                 href="https://www.instagram.com/jayantb1019/"
+                target="_blank"
                 class="pure-menu-link"
                 >Instagram</a
               >
@@ -609,6 +637,7 @@
             <li class="pure-menu-item">
               <a
                 href="https://www.facebook.com/jayant.murthy"
+                target="_blank"
                 class="pure-menu-link"
                 >Facebook</a
               >
@@ -639,6 +668,9 @@
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
+      firebase.analytics().logEvent("userAgent", {
+        agent: window.navigator.userAgent,
+      });
     </script>
   </body>
 </html>
