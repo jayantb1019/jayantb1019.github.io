@@ -1,98 +1,367 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,minimum-scale=1,initial-scale=1"
-    />
-    <title>Jayanth Boddu</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
-      integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      div,
-      p {
-        font-family: "Roboto Mono", monospace;
-      }
-      .content-subhead {
-        margin-top: 30px;
-      }
-    </style>
-    <script>
-      function pr() {
-        var el = document.getElementById("el");
-        var header = document.getElementById("header");
-        console.log(el.scrollTop, el.scrollHeight);
-        if (el.scrollTop / el.scrollHeight >= 0.12) {
-          console.log("show header");
-          header.setAttribute("style", "display:unset");
-        } else {
-          console.log("hide header");
-          header.setAttribute("style", "display:none");
-        }
-      }
-    </script>
-  </head>
-  <body id="el">
-    <div class="header" id="header">
-      <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="https://jayantb1019.github.io"
-          >Jayanth Boddu</a
-        >
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Jayanth Boddu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./styles.css">
 
-        <ul class="pure-menu-list">
-          <!-- <li class="pure-menu-item pure-menu-selected">
-            <a href="#" class="pure-menu-link">Resume</a>
-          </li> -->
-          <li class="pure-menu-item">
-            <a
-              href="https://analytics-blog-d3223.web.app"
-              class="pure-menu-link"
-              style="color: white"
-              target="_blank"
-            >
-              <strong>Analytics Blog</strong>
-            </a>
-          </li>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<div class="resume-wrapper">
+	<section class="profile section-padding side">
+		<div class="container">
+			<div class="picture-resume-wrapper">
+        <div class="picture-resume">
+        <span><img src="./jayanth-boddu.png" alt="" /></span>
+        <svg version="1.1" viewBox="0 0 350 350">
+  
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9" result="cm" />
+              </filter>
+            </defs>
+            
+            
+          <g filter="url(#goo)" >  
+            
+            <circle id="main_circle" class="st0" cx="171.5" cy="175.6" r="130"/>
+            
+            <circle id="circle" class="bubble0 st1" cx="171.5" cy="175.6" r="122.7"/>
+            <circle id="circle" class="bubble1 st1" cx="171.5" cy="175.6" r="122.7"/>
+            <circle id="circle" class="bubble2 st1" cx="171.5" cy="175.6" r="122.7"/>
+            <circle id="circle" class="bubble3 st1" cx="171.5" cy="175.6" r="122.7"/>
+            <circle id="circle" class="bubble4 st1" cx="171.5" cy="175.6" r="122.7"/>
+            <circle id="circle" class="bubble5 st1" cx="171.5" cy="175.6" r="122.7"/>
+            <circle id="circle" class="bubble6 st1" cx="171.5" cy="175.6" r="122.7"/>
+            <circle id="circle" class="bubble7 st1" cx="171.5" cy="175.6" r="122.7"/>
+            <circle id="circle" class="bubble8 st1" cx="171.5" cy="175.6" r="122.7"/>
+            <circle id="circle" class="bubble9 st1" cx="171.5" cy="175.6" r="122.7"/>
+            <circle id="circle" class="bubble10 st1" cx="171.5" cy="175.6" r="122.7"/>
 
-          <li
-            class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"
-          >
-            <a
-              href="#"
-              id="menuLink1"
-              class="pure-menu-link"
-              style="color: white"
-              >Certificates</a
-            >
-            <ul class="pure-menu-children">
+          </g>  
+        </svg>
+      </div>
+         <div class="clearfix"></div>
+ </div>
+      <div class="name-wrapper">
+        <h1>Jayanth Boddu</h1><!-- YOUR NAME AND LAST NAME  -->
+      </div>
+      <div class="clearfix"></div>
+      <div class="contact-info clearfix">
+      	<ul class="list-titles">
+      		<li>Call</li>
+      		<li>Mail</li>
+      		<li>Web</li>
+          <li>Blog</li>
+      		<li>Home</li>
+      	</ul>
+        <ul class="list-content ">
+        	<li>+91 7710092075</li> <!-- YOUR PHONE NUMBER  -->
+        	<li>Boddu_Jayanth@ongc.co.in</li> <!-- YOUR EMAIL -->
+        	<li><a href="https://jayantb1019.github.io">jayantb1019.github.io</a></li> <!-- YOUR WEBSITE  -->
+          <li><a href="https://analytics-blog-d3223.web.app">Yugen</a></li>
+        	<li>Navi Mumbai, IN</li> <!-- YOUR STATE AND COUNTRY  -->
+        </ul>
+      </div>
+      <div class="contact-presentation"> <!-- YOUR PRESENTATION RESUME  -->
+      	<p style='text-align:justify;'><span class="bold">Executive Engineer</span> with a demonstrated history of working in the oil & energy industry. Skilled in procurement, logistics management and maintenance Strong management professional with a Bachelor's in Engineering focused in Electronics and telecommunication from Goa University. Experienced in projects involving asset tracking using BLE , web based systems. Full stack development using MEAN. Have worked extensively on JavaScript in general and angular 2 in particular. Currently learning analytics.  </p>
+      </div>
+      <div class="contact-social clearfix">
+      	<ul class="list-titles">
+      		<li>LinkedIn</li>
+      		<li>Github</li>
+      		<li>Kaggle</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Facebook</li>
+      	</ul>
+        <ul class="list-content"> <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
+      		<li><a href="https://www.linkedin.com/in/jayanthboddu/">jayanthboddu</a></li> <!-- YOUR TWITTER USER  -->
+      		<li><a href="https://github.com/jayantb1019">jayantb1019</a></li> <!-- YOUR DRIBBBLE USER  -->
+      		<li><a href="https://www.kaggle.com/jayantb1019">jayantb1019</a></li> <!-- YOUR BEHANCE USER  -->
+          <li><a href="http://twitter.com/JayanthBoddu/">JayanthBoddu</a></li>
+          <li><a href="https://www.instagram.com/jayantb1019/">jayantb1019</a></li>
+           <li><a href="https://www.facebook.com/jayant.murthy">jayant.murthy</a></li>
+      	</ul>
+      </div>
+    </div>
+    <div style="font-size:12px;text-align:left;margin-top:40px;">Template by <a href="https://codepen.io/mariosmaselli">mariosmaselli</a></div>
+	</section>
+  
+  <section class="experience section-padding main">
+  	<div class="container">
+  		<h3 class="experience-title">Work Experience</h3>
+      
+      <div class="experience-wrapper">
+      	<div class="company-wrapper clearfix">
+      		<div class="experience-title">Oil & Natural Gas Corporation</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+          <div class="time">2019 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+      	</div>
+        
+        <div class="job-wrapper clearfix">
+        	<div class="experience-title">Executive Engineer(Electronics) </div> <!-- JOB TITLE  -->
+          <div class="company-description">
+          	<p>Offshore Logistics,Tool Maintenance, Internal website maintenance, Offshore Logistics coordination, Procurement, Inventory tracking & Reconciliation, part of the audit team</p>  <!-- JOB DESCRIPTION  -->
+          </div>
+        </div>
+        
+        <div class="company-wrapper clearfix">
+      		<div class="experience-title">Oil & Natural Gas Corporation</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+          <div class="time">2015 to 2018</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+      	</div>
+        
+        <div class="job-wrapper clearfix">
+        	<div class="experience-title">Assistant Executive Engineer(Electronics) </div> <!-- JOB TITLE  -->
+          <div class="company-description">
+          	<p>Internal website maintenance, inventory tracking and general administration work.</p>  <!-- JOB DESCRIPTION  -->
+          </div>
+        </div>
+        
+        <div class="company-wrapper clearfix">
+      		<div class="experience-title">Oil & Natural Gas Corporation</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+          <div class="time">2013 to 2014</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+      	</div>
+        
+        <div class="job-wrapper clearfix">
+        	<div class="experience-title">Graduate Trainee </div> <!-- JOB TITLE  -->
+          <div class="company-description">
+          	<p>Joined the company in Well Logging Services. Worked on maintenance of hitech wireline logging tools and coordination of maintenance processes. I was also responsible for Offshore Logistics and operations support.</p>  <!-- JOB DESCRIPTION  -->
+          </div>
+        </div>
+        
+      </div><!--Analytics experience-->
+      
+      <h3 class="experience-title">Analytics Experience</h3>
+      
+       <div class="experience-wrapper">
+                   <!-- -->
+                   <div class="company-wrapper clearfix">
+                    <div class="experience-title">Lead Scoring for X Education</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+                  </div>
+          <div class="job-wrapper clearfix">
+                    <div class="company-description">
+                      <p>Helped X Education select the most promising sales leads, i.e. the leads that are most likely to convert into paying customers. Built a model wherein we need to assign a lead score to each of the leads such that the customers with higher lead score have a higher conversion chance and the customers with lower lead score have a lower conversion chance. Potentially improved the conversion rate from 30% to ~80%. Reported the most important attributes that indicate high chances of conversion.
+            <div class="tools">
+                      <div>Libraries : Pandas,StatsModels, Scikit-Learn</div>
+          <div>Concepts : Logistic Regression, Class Probability Estimation, Gain & Lift Charts, Feature Elimination, ROC, AUC, Sensitivity, Specificity, Precision, Recall</div>
+                      
+                      </div>  
+                    </div>
+            <div style="margin-top:16px;"><a href='./Analysis/lead-scoring.html'>Complete Analysis</a></div>
+                  </div>
+                  <!-- -->
+                  
+                             <!-- -->
+                            <div class="company-wrapper clearfix">
+                    <div class="experience-title">HELP - Countries to Aid</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+                  </div>
+          <div class="job-wrapper clearfix">
+                    <div class="company-description">
+                      <p>HELP, an NGO wanted to use their funding strategically so that they could aid five countries in dire need of help. The project used various clustering algorithms to group countries based on socio-economic and health factors to judge the overall development of countries to suggest 5 countries that need the aid the most. Also created interactive plots to explore countries in each cluster.
+            <div class="tools">
+                      <div>Libraries : Pandas, Scikit-Learn, Bokeh</div>
+          <div>Concepts : Unsupervised Learning, Clustering, K-Means, Hierarchical clustering, Mixed KMeans Clustering </div>
+                      
+                      </div>  
+                    </div>
+            <div style="margin-top:16px;"><a href='./Analysis/clustering.html'>Complete Analysis</a></div>
+                  </div>
+                  <!-- -->
+                  <div class="company-wrapper clearfix">
+                    <div class="experience-title">Bike Sharing Demand Prediction</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+                  </div>
+                  
+                  <div class="job-wrapper clearfix">
+                    <div class="company-description">
+                      <p>Business data of a hypothetical Bike sharing company was modelled to understand the effects of different factors on the daily demand. The most important factors that influence demand were reported along with an estimate of their measure of importance. Using this data, the business could predict demand with reasonable accuracy and use the insights to strategize business goals. This is an exercise in implementing Linear Regression models for prediction and inference.
+            <div class="tools">
+                      <div>Libraries: Scikit-learn, statsmodels, Pandas</div>
+          <div>Concepts: Pearson's Correlation, Linear Regression, Multi collinearity, Hypothesis Testing.</div>
+                      
+                      </div> 
+          <div style="margin-top:16px;"><a href='./Analysis/boom-bikes-demand-regression.html'>Complete Analysis</a></div>
+                    </div>
+                  </div>
+      	<div class="company-wrapper clearfix">
+      		<div class="experience-title">Bank Credit Default Analysis</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+      	</div>
+        
+        <div class="job-wrapper clearfix">
+          <div class="company-description">
+          	<p>Loan application data of a hypothetical bank was analysed along with credit history to report customer attributes, most indicative of default. Parameters related to loan default were determined and analysed using Exploratory data analysis techniques. This analysis is useful in estimating the risk of lending and thereby make decisions like loan rejection or hike in interest rate offered.
+  <div class="tools">
+            <div>Libraries: Numpy,Pandas,Matplotlib,Seaborn</div>
+<div>Concepts: Descriptive Statistics, Unbalanced Data, Univariate analysis, Bivariate analysis, Data Visualization</div>
+    <div style="margin-top:16px;"><a href='./Analysis/eda_1.html'>Complete Analysis</a></div>
+            
+            </div>  
+          </div>
+        </div>
+
+
+
+         <!-- -->
+                  <div class="company-wrapper clearfix">
+      		<div class="experience-title">EDA - Breast Cancer Diagnosis [Guided Project]</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+      	</div>
+<div class="job-wrapper clearfix">
+          <div class="company-description">
+          	<p>Completed a Coursera guided project on Exploratory Data Analysis of Breast Cancer Diagnosis data. This analysis helps in forming initial assumptions and a set of questions to give direction to further analysis. This is an exercise to identify variables potentially related to modelling breast cancer diagnosis, especially through visualizations of distribution of values and their variance.
+  <div class="tools">
+            <div>Libraries : Pandas, Seaborn</div>
+<div>Concepts : Data Visualization, Violin Plots, Swarm Plots</div>
+            
+            </div>  
+          </div>
+  <div style="margin-top:16px;"><a href='./Analysis/Breast+Cancer+EDA.html'>Complete Analysis</a></div>
+        </div>
+        <!-- -->
+         
+
+         
+         <!-- -->
+                  <div class="company-wrapper clearfix">
+      		<div class="experience-title">IMDB Movie Analysis
+      	</div>
+         </div>
+<div class="job-wrapper clearfix">
+          <div class="company-description">
+          	<p>IMDB was scraped for movie data. The data was analysed for insights like the most profitable movies,the worst performing movies and top 10 movie directors. This was an exercise in importing, manipulating and grouping data to answer relevant questions.
+  <div class="tools">
+            <div>Libraries : Numpy,Pandas, Beautiful Soup</div>
+<div>Concepts : Web Scraping, Data Cleaning, Data Sorting, Filtering, Grouping </div>
+            
+            </div>  
+          </div>
+  <div style="margin-top:16px;"><a href='./Analysis/Movie+Assignment.html'>Complete Analysis</a></div>
+        </div>
+        <!-- -->
+         
+           <!-- -->
+                  <div class="company-wrapper clearfix">
+      		<div class="experience-title">Wine Quality Prediction
+      	</div>
+         </div>
+<div class="job-wrapper clearfix">
+          <div class="company-description">
+          	<p>This analysis focuses on finding attributes that significantly affect wine quality classification and training a predictive model to classify wine quality into good and bad based on attributes. Analysis is pivoted on the variable 'quality'.
+  <div class="tools">
+            <div>Libraries : Numpy,Pandas,Statsmodels</div>
+            <div>Concepts : Classification,Sensitivity, Accuracy </div>
+            
+            </div>  
+          </div>
+  <div style="margin-top:16px;"><a href='./Analysis/wine_quality_classification.html'>Complete Analysis</a></div>
+        </div>
+        <!-- -->
+      </div>
+      <!-- -->
+      <h3 class="experience-title">Dev Experience</h3>
+      
+      <div class="experience-wrapper">
+        <!-- -->
+        <div class="company-wrapper clearfix">
+      		<div class="experience-title">Asset Tracking using Bluetooth Low Energy</div>
+        </div>
+        <div class="job-wrapper clearfix">
+          <div class="company-description">
+          	<p>For real time position tracking of high value assets, I developed a system involving low cost raspberry pi based scanners and BLE beacons. Beacons were attached to high value assets. Readers placed in each zone read realtime broadcasts of beacons and relayed data to a server connected through Ethernet. A web app showed real time location of high value inventory</p>
+
+          </div>
+        </div>
+        
+         <!-- -->
+        <!-- -->
+        <div class="company-wrapper clearfix">
+      		<div class="experience-title">Web App for Inventory Tracking</div>
+        </div>
+        <div class="job-wrapper clearfix">
+          <div class="company-description">
+          	<p>Built an inventory tracking web app with all store related functionality using Full stack Javascript technologies. I used
+                <ul style='margin-top:16px;margin-bottom : 16px;'>
+                  <li>NodeJS backend</li>
+                  <li>ExpressJS web server</li>
+                  <li>Angular frontend</li>
+                  <li>MongoDB database</li>
+                </ul>
+            This web app is being used internally for daily operations.</p>
+
+          </div>
+        </div>
+        
+         <!-- -->
+        
+        <!-- -->
+        <div class="company-wrapper clearfix">
+      		<div class="experience-title">Biometric Attendance System</div>
+        </div>
+        <div class="job-wrapper clearfix">
+          <div class="company-description">
+          	<p>Built a web based biometric attendance system. Wrote C++ libraries to nodejs bindings to access device APIs. The device was connected to server hosting the web app to track attendance. Angular and bootstrap was used to build the web app. This app was used till the roll out of enterprise wide access control system.</p>
+
+          </div>
+        </div>
+        
+         <!-- -->
+      <h3 class="experience-title">Learning</h3>
+      
+      <!-- -->
+      <div class="company-wrapper clearfix">
+      		<div class="experience-title">Post Graduate Diploma [Online]</div> 
+          <div class="time">March 2020 - Present</div> 
+      </div>
+        
+      <div class="job-wrapper clearfix">
+        	<div class="experience-title">Data Science with Specialization in Deep Learning            </div> <!-- JOB TITLE  -->
+          <div class="company-description">
+          	<p>
+              <div> Course Topics Completed : Data Analysis in Excel,
+              Analytics Problem Solving,
+              Data Analysis using SQL,
+              Python for Data Analysis, Data Visualization,
+              Exploratory Data Analysis,
+              Inferential Statistics,
+              Hypothesis Testing,Machine Learning - Linear Regression, LogisticRegression,Clustering, Tree Based Models, Ensembles, Bagging & Boosting, Regularization</div>
+              <div>
+                Upcoming Topics : Deep Learning , Capstone Project
+              </div>
+  
+            </p>  
+          </div>
+        </div>
+      <!-- -->
+    
+    <!-- -->
+      <div class="company-wrapper clearfix">
+      		<div class="experience-title">Bachelors of Engineering</div> 
+          <div class="time">2008 - 2012</div> 
+      </div>
+        
+      <div class="job-wrapper clearfix">
+        	<div class="experience-title">Electronics & Telecommunication</div> <!-- JOB TITLE  -->
+          <div class="company-description">
+          	<p>
+              <div> Goa College Of Engineering - 67.3%</div>
+  
+            </p>  
+          </div>
+        </div>
+      <!-- -->
+      </div>
+      
+    <div class="section-wrapper clearfix">
+      	<h3 class="section-title">Certificates</h3> 
+        	<ul class="pure-menu-children">
               <li class="pure-menu-item">
                 <a
                   href="./certificates/ascii Emerging Technologies 20191108.pdf"
                   target="_blank"
                   class="pure-menu-link"
-                  >Big Data, IoT, BlockChain</a
+                  >ASCI - Big Data, IoT, BlockChain</a
                 >
               </li>
               <li class="pure-menu-item">
@@ -100,7 +369,7 @@
                   href="./certificates/Coursera ai for everyone 20191213.pdf"
                   target="_blank"
                   class="pure-menu-link"
-                  >AI for Everyone</a
+                  >Coursera - AI for Everyone </a
                 >
               </li>
               <li class="pure-menu-item">
@@ -176,488 +445,62 @@
                 >
               </li>
             </ul>
-          </li>
-          <li
-            class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"
-          >
-            <a
-              href="#"
-              id="menuLink1"
-              class="pure-menu-link"
-              style="color: white"
-              >Analysis</a
-            >
-            <ul class="pure-menu-children">
-              <li class="pure-menu-item">
-                <a href="./Analysis/lead-scoring.html" class="pure-menu-link"
-                  >Lead Scoring For X Education</a
-                >
-              </li>
-              <li class="pure-menu-item">
-                <a
-                  href="./Analysis/Movie+Assignment.html"
-                  class="pure-menu-link"
-                  >IMDB Movies Analysis</a
-                >
-              </li>
-              <li class="pure-menu-item">
-                <a href="./Analysis/eda_1.html" class="pure-menu-link"
-                  >Bank Credit Default Case Study</a
-                >
-              </li>
-              <li class="pure-menu-item">
-                <a
-                  href="./Analysis/boom-bikes-demand-regression.html"
-                  class="pure-menu-link"
-                  >Bike Sharing Demand Prediction</a
-                >
-              </li>
-              <li class="pure-menu-item">
-                <a
-                  href="./Analysis/wine_quality_classification.html"
-                  class="pure-menu-link"
-                  >Wine Quality Classification</a
-                >
-              </li>
-              <li class="pure-menu-item">
-                <a href="./Analysis/clustering.html" class="pure-menu-link"
-                  >HELP aid - Clustering Countries</a
-                >
-              </li>
-              <li class="pure-menu-item">
-                <a
-                  href="./Analysis/Breast+Cancer+EDA.html"
-                  class="pure-menu-link"
-                  >Guided Project - Breast Cancer EDA</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li
-            class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"
-          >
-            <a
-              href="#"
-              id="menuLink1"
-              class="pure-menu-link"
-              style="color: white"
-              >Presentations</a
-            >
-            <ul class="pure-menu-children">
-              <li class="pure-menu-item">
-                <a
-                  href="./presentations/Errors in Hypothesis Testing slideshow.html"
-                  class="pure-menu-link"
-                  target="_blank"
-                  >Errors in Hypothesis</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="pure-menu-item pure-menu-selected">
-            <a
-              href="https://www.kaggle.com/jayantb1019"
-              target="_blank"
-              class="pure-menu-link"
-              style="color: white"
-            >
-              <!-- <i
-                class="fab fa-kaggle"
-                style="color: white; font-weight: bolder;"
-              ></i>  -->
-              kaggle
-            </a>
-          </li>
-          <li class="pure-menu-item pure-menu-selected">
-            <a
-              href="https://github.com/jayantb1019"
-              target="_blank"
-              class="pure-menu-link"
-            >
-              <i
-                class="fa fa-code"
-                style="color: white; font-weight: bolder"
-              ></i>
-            </a>
-          </li>
-          <li class="pure-menu-item">
-            <a
-              href="https://www.linkedin.com/in/jayanthboddu/"
-              class="pure-menu-link"
-              target="_blank"
-            >
-              <i class="fa fa-linkedin" style="color: white"></i>
-            </a>
-          </li>
-        </ul>
+        
       </div>
-    </div>
-    <div class="splash-container">
-      <div class="splash">
-        <h1 class="splash-head">Jayanth Boddu</h1>
-        <div class="splash-subhead">
-          <div>Executive Engineer (Electronics)</div>
-          <div style="font-size: 22px; font-weight: bolder">
-            Oil & Natural Gas Corporation Ltd
-          </div>
-          <br />
-          <br />
-          <div>Boddu_Jayanth@ongc.co.in</div>
-          <div>+91 7710092075</div>
-          <div>Navi Mumbai, India</div>
-        </div>
-      </div>
-    </div>
-    <div class="content-wrapper">
-      <div class="content">
-        <div class="pure-g">
-          <div class="l-box-lrg pure-u-1 pure-u-md-1-2">
-            <div class="content-subhead">WORK</div>
-            <div class="l-box pure-u-1">
-              <div class="side-heading">Appraisal : A/A+ throughout</div>
-              <div class="segment">
-                <div class="side-heading">2019 to present</div>
-                <div>OIL AND NATURAL GAS CORPORATION</div>
-                <div class="designation">Executive Engineer(Electronics)</div>
-                <p>
-                  Offshore Logistics,Tool Maintenance, Internal website
-                  maintenance, Offshore Logistics coordination, Procurement,
-                  Inventory tracking & Reconciliation, part of the audit team
-                </p>
-              </div>
-              <div>
-                <div class="side-heading">2015 to 2018</div>
-                <div>OIL AND NATURAL GAS CORPORATION LTD</div>
-                <div class="designation">
-                  Assistant Executive Engineer(Electronics)
-                </div>
-                <p>
-                  Internal website maintenance, inventory tracking and general
-                  administration work.
-                </p>
-              </div>
-              <div>
-                <div class="side-heading">2013 to 2014</div>
-                <div>OIL AND NATURAL GAS CORPORATION LTD</div>
-                <div class="designation">Graduate Trainee</div>
-                <p>
-                  Joined the company in Well Logging Services. Worked on
-                  maintenance of hitech wireline logging tools and coordination
-                  of maintenance processes. I was also responsible for Offshore
-                  Logistics and operations support.
-                </p>
-              </div>
-            </div>
-            <div
-              class="content-subhead"
-              style="
-                padding-top: 40px;
-                border-top: 1px solid rgba(0, 0, 0, 0.1);
-              "
-            >
-              ANALYTICS EXPERIENCE
-            </div>
-            <div class="l-box pure-u-1">
-              <div class="side-heading">Bank Credit Default Analysis</div>
-              <div>
-                <p>
-                  Loan application data of a hypothetical bank was analysed
-                  along with credit history to report customer attributes, most
-                  indicative of default. Parameters related to loan default were
-                  determined and analysed using Exploratory data analysis
-                  techniques. This analysis is useful in estimating the risk of
-                  lending and thereby make decisions like loan rejection or hike
-                  in interest rate offered.
-                </p>
-                <div>Libraries: Numpy,Pandas,Matplotlib,Seaborn</div>
-                <div>
-                  Concepts: Descriptive Statistics, Unbalanced Data, Univariate
-                  analysis, Bivariate analysis, Data Visualization
-                </div>
-              </div>
-            </div>
-            <div class="l-box pure-u-1">
-              <div class="side-heading">IMDB Movie Analysis</div>
-              <div>
-                <p>
-                  IMDB was scraped for movie data. The data was analysed for
-                  insights like the most profitable movies,the worst performing
-                  movies and top 10 movie directors. This was an exercise in
-                  importing, manipulating and grouping data to answer relevant
-                  questions.
-                </p>
-                <div>Libraries: Numpy,Pandas, Beautiful Soup.</div>
-                <div>
-                  Concepts: Web Scraping, Data Cleaning, Data Sorting,
-                  Filtering, Grouping.
-                </div>
-              </div>
-            </div>
-            <div class="l-box pure-u-1">
-              <div class="side-heading">Bike Sharing Demand Prediction.</div>
-              <div>
-                <p>
-                  Business data of a hypothetical Bike sharing company was
-                  modelled to understand the effects of different factors on the
-                  daily demand. The most important factors that influence demand
-                  were reported along with an estimate of their measure of
-                  importance. Using this data, the business could predict demand
-                  with reasonable accuracy and use the insights to strategize
-                  business goals. This is an exercise in implementing Linear
-                  Regression models for prediction and inference.
-                </p>
-                <div>Libraries : Scikit-learn, statsmodels, Pandas.</div>
-                <div>
-                  Concepts : Pearson's Correlation, Linear Regression, Multi
-                  collinearity, Hypothesis Testing.
-                </div>
-              </div>
-            </div>
-            <div class="l-box pure-u-1">
-              <div class="side-heading">
-                Exploratory Data Analysis - Breast Cancer Diagnosis [Guided
-                Project]
-              </div>
-              <div>
-                <p>
-                  Completed a Coursera guided project on Exploratory Data
-                  Analysis of Breast Cancer Diagnosis data. This analysis helps
-                  in forming initial assumptions and a set of questions to give
-                  direction to further analysis. This is an exercise to identify
-                  variables potentially related to modelling breast cancer
-                  diagnosis, especially through visualizations of distribution
-                  of values and their variance.
-                </p>
-                <div>Libraries : Pandas, Seaborn.</div>
-                <div>
-                  Concepts : Data Visualization, Violin Plots, Swarm Plots.
-                </div>
-              </div>
-              <div>
-                <br />
-                Use navigation bar to access all analyses and certificates
-              </div>
-            </div>
-            <div
-              class="content-subhead"
-              style="
-                padding-top: 40px;
-                border-top: 1px solid rgba(0, 0, 0, 0.1);
-              "
-            >
-              DEV PROJECTS
-            </div>
-            <div class="l-box pure-u-1">
-              <div class="side-heading">Web App for Inventory Tracking</div>
-              <div>
-                <p>
-                  Built an inventory tracking web app with all store related
-                  functionality using Full stack Javascript technologies. I used
-                </p>
-                <ul>
-                  <li>NodeJS backend</li>
-                  <li>ExpressJS web server</li>
-                  <li>Angular frontend</li>
-                  <li>MongoDB database</li>
-                </ul>
-                <div>
-                  This web app is being used internally for daily operations.
-                </div>
-              </div>
-              <div>
-                <div class="side-heading">Biometric Attendance System</div>
-                <p>
-                  Built a web based biometric attendance system. Wrote C++
-                  libraries to nodejs bindings to access device APIs. The device
-                  was connected to server hosting the web app to track
-                  attendance. Angular and bootstrap was used to build the web
-                  app. This app was used till the roll out of enterprise wide
-                  access control system.
-                </p>
-              </div>
-              <div>
-                <div class="side-heading">
-                  Asset Tracking using Bluetooth Low Energy
-                </div>
-                <p>
-                  For real time position tracking of high value assets, I
-                  developed a system involving low cost raspberry pi based
-                  scanners and BLE beacons. Beacons were attached to high value
-                  assets. Readers placed in each zone read realtime broadcasts
-                  of beacons and relayed data to a server connected through
-                  Ethernet. A web app showed real time location of high value
-                  inventory
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="l-box-lrg pure-u-1 pure-u-md-1-2">
-            <div class="content-subhead">EDUCATION</div>
-            <div class="l-box pure-u-1">
-              <div class="side-heading">Mar 2020 - Feb 2021</div>
-              <div>
-                <div>IIIT Bangalore & Upgrad</div>
-                <div class="designation">Post Graduate Diploma [Online]</div>
-                <div>Data Science with Specialization in Deep Learning</div>
-                <div style="color: black">Ongoing</div>
-              </div>
-              <div class="l-box pure-u-1">
-                <div class="side-heading">Course Topics Completed</div>
-                <div>
-                  <div>Data Analysis in Excel</div>
-                  <div>Analytics Problem Solving</div>
-                  <div>Data Analysis using SQL</div>
-                  <div>Python for Data Analysis, Visualization</div>
-                  <div>Exploratory Data Analysis</div>
-                  <div>Inferential Statistics</div>
-                  <div>Hypothesis Testing</div>
-                  <div>Bank Loan Default Case Study</div>
-                  <div>Machine Learning - Linear Regression</div>
-                </div>
-                <div class="side-heading">Upcoming Topics</div>
-                <div>
-                  <div>Advanced Machine Learning</div>
-                  <div>Deep Learning Specialization</div>
-                  <div>Capstone Project</div>
-                </div>
-              </div>
-            </div>
-            <div class="l-box pure-u-1">
-              <div class="side-heading">2006-2008</div>
-              <div>
-                <div>Sri Chaitanya College</div>
-                <div class="designation">Intermediate</div>
-                <div>Maths & Science</div>
-                <div style="color: black">95.7%</div>
-              </div>
-            </div>
-            <div class="l-box pure-u-1">
-              <div class="side-heading">2008-2012</div>
-              <div>
-                <div>Goa College Of Engineering</div>
-                <div class="designation">Bachelors</div>
-                <div>Electronics & Telecommunication</div>
-                <div style="color: black">67.3%</div>
-              </div>
-
-              <div class="side-heading">2006-2008</div>
-              <div>
-                <div>Sri Chaitanya College</div>
-                <div class="designation">Intermediate</div>
-                <div>Maths & Science</div>
-                <div style="color: black">95.7%</div>
-              </div>
-            </div>
-            <div
-              class="content-subhead"
-              style="
-                padding-top: 40px;
-                border-top: 1px solid rgba(0, 0, 0, 0.1);
-              "
-            >
-              SKILLS
-            </div>
-            <div class="l-box pure-u-1">
-              <div class="side-heading">Analytics</div>
-              <div>
-                <div>Python, Pandas, Numpy, Matplotlib</div>
-                <div>Data Visualization</div>
-                <div>Descriptive Statistics</div>
-                <div>Exploratory Data Analysis</div>
-                <div>Regression Analysis</div>
-              </div>
+      
+      <div class="section-wrapper clearfix" style='padding-left : 40px;'>
+      	<h3 class="section-title">Skills</h3>  <!-- YOUR SET OF SKILLS  -->
+        	              <div class="side-heading">Analytics</div>
+              <ul class='skills-section'>
+                <li>Python, Pandas, Numpy, Matplotlib</li>
+                 <li>Descriptive Statistics</li>
+                <li>Exploratory Data Analysis, Data Visualization</li>
+                 <li>Regression Analysis</li>
+                <li>Classification Analysis</li>
+                <li>Clustering Analysis</li>
+              </ul>
               <div class="side-heading">Management</div>
-              <div>
-                <div>General Administration</div>
-                <div>Logistics</div>
-                <div>Maintenance</div>
-                <div>Procurement</div>
-              </div>
+              <ul>
+                 <li>General Administration</li>
+                 <li>Logistics</li>
+                 <li>Maintenance</li>
+                 <li>Procurement</li>
+              </ul>
               <div class="side-heading">Dev</div>
-              <div>
-                <div>Angular2</div>
-                <div>NodeJs</div>
-                <div>RxJS</div>
-                <div>Redux</div>
-                <div>AWS</div>
-                <div>Cordova / PhoneGap</div>
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>Javascript</div>
-                <div>Learning Python</div>
-                <div>Matlab</div>
-              </div>
+              <ul>
+                 <li>Angular2</li>
+                 <li>NodeJs</li>
+                 <li>RxJS</li>
+                 <li>AWS</li>
+                 <li>Cordova / PhoneGap</li>
+                 <li>HTML, CSS, Javascript</li>
+              </ul>
               <div class="side-heading">UI/UX Design</div>
-              <div>
-                <div>Basic Prototyping</div>
-                <div>WireFraming</div>
-                <div>Figma</div>
-              </div>
-            </div>
-            <div
-              class="content-subhead"
-              style="
-                padding-top: 40px;
-                border-top: 1px solid rgba(0, 0, 0, 0.1);
-              "
-            >
-              WORK-LIFE BALANCE
-            </div>
-            <div class="l-box pure-u-1">
-              <div class="side-heading">Hiking</div>
-              <p>
-                Have undertaken regular hikes to mountains in Sahyadri Range.
-                Climbed the highest peak of Maharashtra including several
-                moderate to difficult peaks
-              </p>
-              <div class="side-heading">Cycling</div>
-            </div>
-          </div>
-        </div>
+              <ul>
+                 <li>Basic Prototyping</li>
+                 <li>WireFraming</li>
+                <li>Figma</li>
+              </ul>
+        
       </div>
-      <div class="social">
-        <div class="pure-menu pure-menu-horizontal">
-          <ul>
-            <li class="pure-menu-item">
-              <a href="#" class="pure-menu-link">About</a>
-            </li>
-            <li class="pure-menu-item">
-              <a
-                href="http://twitter.com/JayanthBoddu/"
-                target="_blank"
-                class="pure-menu-link"
-                >Twitter</a
-              >
-            </li>
-            <li class="pure-menu-item">
-              <a
-                href="https://github.com/jayantb1019"
-                target="_blank"
-                class="pure-menu-link"
-                >GitHub</a
-              >
-            </li>
-            <li class="pure-menu-item">
-              <a
-                href="https://www.instagram.com/jayantb1019/"
-                target="_blank"
-                class="pure-menu-link"
-                >Instagram</a
-              >
-            </li>
-            <li class="pure-menu-item">
-              <a
-                href="https://www.facebook.com/jayant.murthy"
-                target="_blank"
-                class="pure-menu-link"
-                >Facebook</a
-              >
-            </li>
-          </ul>
-        </div>
+      
+      <div class="section-wrapper clearfix">
+        <h3 class="section-title">WORK-LIFE BALANCE</h3>  <!-- DESCRIPTION OF YOUR HOBBIES -->
+        <div class='side-heading'>Hiking</div>
+Have undertaken regular hikes to mountains in Sahyadri Range. Climbed the highest peak of Maharashtra including several moderate to difficult peaks
+
+        <div class='side-heading'>Cycling</div>
+        <p>Follow me on <a href="https://www.strava.com/athletes/51296063">Strava</a></p>
       </div>
+      
     </div>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  </section>
+  
+  <div class="clearfix"></div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script><script  src="./script.js"></script>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -683,5 +526,6 @@
         agent: window.navigator.userAgent,
       });
     </script>
-  </body>
+
+</body>
 </html>
