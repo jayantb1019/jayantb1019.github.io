@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 11.1//EN
+N:K R;Aneesh;;;
+FN:Aneesh K R
+ORG:Logging Services\, ONGC Mumbai;
+TITLE:SG(Wells)
+EMAIL;type=INTERNET;type=WORK;type=pref:aneeshkr@live.com
+EMAIL;type=INTERNET;type=WORK:R_AneeshK@ongc.co.in
+TEL;type=WORK;type=VOICE;type=pref:+91 99692 27673
+TEL;type=HOME;type=VOICE:+91 88793 79363
+TEL;type=WORK;type=VOICE:+91 22 2748 6722
+ADR;type=WORK;type=pref:;;Logging services\, ongc;Mumbai;Maharashtra;;
+END:VCARD
